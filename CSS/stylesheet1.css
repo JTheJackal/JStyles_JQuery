@@ -1,0 +1,281 @@
+html, body {
+    
+    height: 100%;
+    overflow: hidden;
+}
+
+orangeText {
+    
+    color: orange;
+}
+
+.full-height {
+    
+    min-height: 100%;
+}
+
+.light {
+    
+    background-color: azure;
+}
+
+.dark {
+    
+    background-color: #1a1a1f;
+}
+
+.darker {
+    
+    background-color: #131317;
+}
+
+.darker-2 {
+    
+    background-color: #0b0b0f;
+}
+
+.darkest {
+    
+    background-color: #050505;
+}
+
+.blue {
+    
+    background-color: blue;
+}
+
+.darkGrey {
+    
+    background-color: darkslategrey;
+}
+
+.centered {
+    
+    text-align: center;
+}
+
+.justified {
+    
+    text-align: justify;
+}
+
+.v-aligned {
+    
+    padding-top: 2.5%;
+}
+
+.right-aligned {
+    
+    text-align: right;
+}
+
+.light-text {
+    
+    color: white;
+}
+
+.orange-text {
+    
+    color: orange;
+}
+
+.title {
+    
+    text-align: center;
+}
+
+.bottom {
+    
+    vertical-align: bottom;
+}
+
+.padded {
+    
+    padding-top: 10%;
+}
+
+.left-panel {
+    
+    position: sticky;
+    width: 5%;
+    height: 100%;
+    float: left;
+    margin-right: 5%;
+    padding: 12% 0 0 0;
+}
+
+.head-panel {
+    
+    width: 85%;
+    height: 10%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+.about-panel {
+    
+    padding: 0;
+    width: 65%;
+    height: 50%;
+    float: left;
+}
+
+.info-panel {
+    
+    padding: 0;
+    width: 85%;
+    height: 50%;
+    float: left;
+}
+
+.proj-info-panel {
+    
+    padding: 0;
+    width: 85%;
+    height: 100%;
+    float: left;
+}
+
+.main {
+    
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+}
+
+.quick-info-left-panel {
+    
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.info {
+    
+    width: 75%;
+    height: 100%;
+    float: left;
+    margin-right: 2.5%;
+}
+
+.skills-panel {
+    
+    padding: 1%;
+    width: 20%;
+    min-height: 100%;
+    float: left;
+}
+
+.exp-panel {
+    
+    padding: 1%;
+    width: 100%;
+    min-height: 100%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+.education-panel {
+    
+    padding: 1%;
+    width: 100%;
+    min-height: 100%;
+    float: right;
+    margin-bottom: 2%;
+}
+
+.project-info-panel {
+
+    padding: 0;
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+
+.projects {
+
+    padding: 0;
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+
+.picture {
+    
+    width: 22.5%;
+    padding-bottom: 15%;
+    float: right;
+}
+
+.panel-button {
+    
+    width: 100%;
+    height: 12.5%;
+    float: left;
+    border: 0;
+    outline: none;
+}
+
+.panel-button:focus {
+    
+    outline: none;
+}
+
+.proj-btn {
+    
+    margin: 0 0 3% 0;
+    width: 50%;
+    height: 5%;
+    float: left;
+    border: 1px solid black;
+    outline: none;
+}
+
+.about-table {
+    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.selected {
+    
+    color: orange;
+}
+
+.unselected {
+    
+    color: white;
+}
+
+#home-page {
+
+    display: none;
+}
+
+#about-page {
+    
+    display: none;
+}
+
+#projects-page {
+    
+    display: none;
+}
+
+#contacts-page {
+    
+    display: none;
+}
+
+#info-result {
+    
+    display: block;
+    padding: 0 2% 2% 2%;
+}
+
+#tech-result {
+    
+    display: none;
+    padding: 0 2% 2% 2%;
+}
