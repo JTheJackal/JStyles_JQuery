@@ -1,6 +1,8 @@
 $(document).ready(function(){
     
+    particlesJS.load("background-canvas", "../Assets/particlesjs-config.json");
     
+    fadeInTitles();
     
     $("#home-btn").click(function(){
         
@@ -13,6 +15,8 @@ $(document).ready(function(){
         resetAllButtons();
         addBTNSelected($("#home-btn"));
         addTextSelected($("#home-text"));
+        resetTitles();
+        fadeInTitles();
     })
     
     $("#about-btn").click(function(){
@@ -39,7 +43,6 @@ $(document).ready(function(){
         resetAllButtons();
         addBTNSelected($("#projects-btn"));
         addTextSelected($("#projects-text"));
-        
     })
     
     $("#contact-btn").click(function(){
@@ -115,5 +118,17 @@ $(document).ready(function(){
         
         element.removeClass("unselected");
         element.addClass("selected");
+    }
+    
+    function fadeInTitles(){
+        
+        $("#title-1").delay(700).animate({ opacity: 1 }, 2000);
+        $("#title-2").delay(1200).animate({ opacity: 1 }, 2500);
+    }
+    
+    function resetTitles(){
+        
+        $("#title-1").animate({ opacity: 0 }, 0);
+        $("#title-2").animate({ opacity: 0 }, 0);
     }
 });
