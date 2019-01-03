@@ -7,6 +7,7 @@ $(document).ready(function(){
     $("#home-btn").click(function(){
         
         $("#home-page").show();
+        $("#skills-page").hide();
         $("#about-page").hide();
         $("#projects-page").hide();
         $("#contact-page").hide();
@@ -19,9 +20,40 @@ $(document).ready(function(){
         fadeInTitles();
     })
     
+    $("#skills-btn").click(function(){
+        
+        $("#home-page").hide();
+        $("#skills-page").show();
+        $("#about-page").hide();
+        $("#projects-page").hide();
+        $("#contact-page").hide();
+        
+        resetAllText();
+        resetAllButtons();
+        addBTNSelected($("#skills-btn"));
+        addTextSelected($("#skills-text"));
+        resetTitles();
+        fadeInTitles();
+    })
+    
+    $("#continueBTN").click(function(){
+        
+        $("#about-page").show();
+        $("#skills-page").hide();
+        $("#home-page").hide();
+        $("#projects-page").hide();
+        $("#contact-page").hide();
+        
+        resetAllText();
+        resetAllButtons();
+        addBTNSelected($("#about-btn"));
+        addTextSelected($("#about-text"));
+    })
+    
     $("#about-btn").click(function(){
         
         $("#about-page").show();
+        $("#skills-page").hide();
         $("#home-page").hide();
         $("#projects-page").hide();
         $("#contact-page").hide();
@@ -35,6 +67,7 @@ $(document).ready(function(){
     $("#projects-btn").click(function(){
         
         $("#projects-page").show();
+        $("#skills-page").hide();
         $("#home-page").hide();
         $("#about-page").hide();
         $("#contact-page").hide();
@@ -48,6 +81,7 @@ $(document).ready(function(){
     $("#contact-btn").click(function(){
         
         $("#contact-page").show();
+        $("#skills-page").hide();
         $("#home-page").hide();
         $("#about-page").hide();
         $("#projects-page").hide();
@@ -85,11 +119,13 @@ $(document).ready(function(){
     function resetAllText(){
         
         $("#home-text").removeClass("selected");
+        $("#skills-text").removeClass("selected");
         $("#about-text").removeClass("selected");
         $("#projects-text").removeClass("selected");
         $("#contact-text").removeClass("selected");
         
         $("#home-text").addClass("unselected");
+        $("#skills-text").addClass("unselected");
         $("#about-text").addClass("unselected");
         $("#projects-text").addClass("unselected");
         $("#contact-text").addClass("unselected");
@@ -98,11 +134,13 @@ $(document).ready(function(){
     function resetAllButtons(){
         
         $("#home-btn").removeClass("dark");
+        $("#skills-btn").removeClass("dark");
         $("#about-btn").removeClass("dark");
         $("#projects-btn").removeClass("dark");
         $("#contact-btn").removeClass("dark");
         
         $("#home-btn").addClass("darkest");
+        $("#skills-btn").addClass("darkest");
         $("#about-btn").addClass("darkest");
         $("#projects-btn").addClass("darkest");
         $("#contact-btn").addClass("darkest");
@@ -124,11 +162,13 @@ $(document).ready(function(){
         
         $("#title-1").delay(700).animate({ opacity: 1 }, 2000);
         $("#title-2").delay(1200).animate({ opacity: 1 }, 2500);
+        $("#title-3").delay(1500).animate({ opacity: 1 }, 3000);
     }
     
     function resetTitles(){
         
         $("#title-1").animate({ opacity: 0 }, 0);
         $("#title-2").animate({ opacity: 0 }, 0);
+        $("#title-3").animate({ opacity: 0 }, 0);
     }
 });
