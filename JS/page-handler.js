@@ -6,6 +6,8 @@ $(document).ready(function(){
     
     $("#home-btn").click(function(){
         
+        resetTitles();
+        
         $("#home-page").show();
         $("#skills-page").hide();
         $("#about-page").hide();
@@ -16,11 +18,12 @@ $(document).ready(function(){
         resetAllButtons();
         addBTNSelected($("#home-btn"));
         addTextSelected($("#home-text"));
-        resetTitles();
         fadeInTitles();
     })
     
     $("#skills-btn").click(function(){
+        
+        //resetTitles();
         
         $("#home-page").hide();
         $("#skills-page").show();
@@ -32,11 +35,13 @@ $(document).ready(function(){
         resetAllButtons();
         addBTNSelected($("#skills-btn"));
         addTextSelected($("#skills-text"));
-        resetTitles();
-        fadeInTitles();
+        //resetTitles();
+        //fadeInTitles();
     })
     
     $("#continueBTN").click(function(){
+        
+        //resetTitles();
         
         $("#about-page").show();
         $("#skills-page").hide();
@@ -51,6 +56,8 @@ $(document).ready(function(){
     })
     
     $("#about-btn").click(function(){
+        
+        //resetTitles();
         
         $("#about-page").show();
         $("#skills-page").hide();
@@ -79,6 +86,8 @@ $(document).ready(function(){
     })
     
     $("#contact-btn").click(function(){
+        
+        //resetTitles();
         
         $("#contact-page").show();
         $("#skills-page").hide();
@@ -160,15 +169,15 @@ $(document).ready(function(){
     
     function fadeInTitles(){
         
-        $("#title-1").delay(700).animate({ opacity: 1 }, 2000);
-        $("#title-2").delay(1200).animate({ opacity: 1 }, 2500);
-        $("#title-3").delay(1500).animate({ opacity: 1 }, 3000);
+        $("#title-1").delay(100).animate({ opacity: 1 }, 2000);
+        $("#title-2").delay(400).animate({ opacity: 1 }, 2500);
+        $("#title-3").delay(700).animate({ opacity: 1 }, 3000);
     }
     
     function resetTitles(){
         
-        $("#title-1").animate({ opacity: 0 }, 0);
-        $("#title-2").animate({ opacity: 0 }, 0);
-        $("#title-3").animate({ opacity: 0 }, 0);
+        $("#title-1").css( "opacity", 0 );
+        $("#title-2").css( "opacity", 0 );
+        $("#title-3").css( "opacity", 0 );
     }
 });

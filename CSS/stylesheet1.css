@@ -49,6 +49,11 @@ p {
     background-color: blue;
 }
 
+.adjust-center {
+    
+    margin-left: 5%;
+}
+
 .darkGrey {
     
     background-color: darkslategrey;
@@ -148,10 +153,12 @@ p {
 .about-panel {
     
     padding: 0;
+    padding-top: 4%;
     width: 85%;
-    height: 100%;
+    height: 800px;
     float: left;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .info-panel {
@@ -166,8 +173,7 @@ p {
 .proj-info-panel {
     
     padding: 0;
-    width: 85%;
-    height: 100%;
+    width: 100%;
     float: left;
 }
 
@@ -186,10 +192,15 @@ p {
 
 .info {
     
-    width: 75%;
+    width: 100%;
     height: 100%;
     float: left;
     margin-right: 2.5%;
+}
+
+.section-head {
+    
+    margin-bottom: 2%;
 }
 
 .welcome-info {
@@ -203,60 +214,63 @@ p {
 
 .left-column {
     
-    display: inline-block;
-    width: 25%;
+    width: 33%;
     height: 100%;
     position: relative;
     float: left;
-    padding: 0;
+    padding: 0 5% 0 0;
     margin: 0;
 }
 
 .mid-column {
     
-    width: 25%;
-    margin-left: 5%;
-    margin-right: 5%;
-    min-height: 100%;
+    width: 33%;
+    height: 103%;
     position: relative;
+    padding: 0 5% 0 0;
     float: left;
+    margin: 0;
 }
 
 .right-column {
     
-    display: inline-block;
-    width: 40%;
+    width: 33%;
     height: 100%;
     position: relative;
     float: left;
-    padding: 0;
+    padding: 0 5% 0 0;
     margin: 0;
 }
 
 .skills-panel {
 
     padding: 5%;
+    margin: 0;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     float: left;
 }
 
 .tools-panel {
 
-    padding: 3%;
+    padding: 5%;
     width: 100%;
-    min-height: 45%;
+    height: 55%;
     float: left;
     margin-bottom: 5%;
 }
 
 .method-panel {
 
-    padding: 3%;
-    padding-bottom: 4.75%;
+    padding: 5%;
     width: 100%;
-    min-height: 55%;
+    height: 45%;
     float: left;
+}
+
+.method-panel:hover {
+    
+    
 }
 
 .exp-panel {
@@ -264,9 +278,14 @@ p {
     display: block;
     padding: 5%;
     width: 100%;
-    height: 50%;
+    height: 40%;
     float: left;
-    margin-bottom: 10.25%;
+    margin-bottom: 5%;
+}
+
+.exp-panel:hover {
+    
+    
 }
 
 .education-panel {
@@ -274,9 +293,14 @@ p {
     display: block;
     padding: 5%;
     width: 100%;
-    height: 50%;
+    height: 60%;
     float: left;
     margin: 0;
+}
+
+.education-panel:hover {
+    
+    
 }
 
 .project-info-panel {
@@ -427,3 +451,121 @@ p {
     
     cursor: pointer;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .left-panel {
+        
+        display: none;
+    }
+    
+    p {
+        
+        font-size: 1.2em;
+        padding: 0 5% 0 5%;
+    }
+    
+    .main {
+        
+        width: 100%;
+        height: 100%;
+    }
+    
+    .head-panel {
+        
+        text-align: center;
+        float: none;
+    }
+    
+    .subtitle {
+        
+        text-align: center;
+        float: none;
+        margin-left: 0;
+    }
+    
+    .info-panel {
+
+        padding: 0;
+        width: 100%;
+        height: 50%;
+        float: left;
+        text-align: center;
+        padding-right: 5%;
+    }
+    
+    .large {
+        
+        font-size: 1.2em;
+    }
+    
+    .welcome-info {
+        
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .picture {
+        
+        text-align: center;
+        margin-bottom: 5%;
+        width: 60%;
+        padding-bottom: 40%;
+        float: none; 
+    }
+    
+    .title {
+    
+        margin-left: 0;
+        font-family: 'Forum', cursive;
+        opacity: 0;
+    }
+    
+    .summary {
+        
+        width: 100%;
+    }
+    
+    .about-panel {
+        
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .info {
+        
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .scrollable {
+        
+        overflow-y: scroll;
+    }
+    
+    .mobile-header {
+        
+        display: block;
+        color: orange;
+        text-align: center;
+    }
+    
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
