@@ -1,0 +1,24 @@
+
+The Instant Messenger client is a desktop application that allows online text-based communication with other users via a central server. The team consisted of 5 members.
+
+<h2 class="orange">Background</h2>
+
+The university assignment required the 5-person team to create an application which made use of networking technology. The choice of languages and type of application was left for us to choose. We decided to create an instant messenger which drew heavily from Skype Messenger, and use it as a basis of collectively improving our ability with Java and backend development.
+
+The user is presented with a desktop application which allows them to have conversations with other users remotely. The expected, vital features of an Instant Messenger were included such as user authentication and online status were included.
+
+The client side of the application was developed using Java, JavaFX and the JFoenix library. The project involved dealing with sockets and sending/receiving messages via JSON, handling them and having the application react in the expected manner, such as displaying a contact as "Online" or having messages appear on the window.
+
+<h3 class="orange">My roles</h3>
+
+As the team consisted of 5 members, we were able to divide ourselves into "backend" and "front end" teams but still helped out on both sides where needed. I was assigned to the front end team and some of the tasks included:
+
+<ul class="ul2">
+	<li class="li2">Planning and updating deliverables and milestones.</li>
+    <li class="li2">Managing the team via Gantt charts, CPM charts, Trello and meetings.
+	<li class="li2">Communicating progress and updates with the supervisor.</li>
+	<li class="li2">Implementing the planned design of the application with Java.</li>
+	<li class="li2">Having the client send and recieve data via JSON and handle that data.</li>
+	<li class="li2">Testing the application and presenting it to the supervisor once complete.</li>
+	<li class="li2">Documentation.</li>
+</ul>

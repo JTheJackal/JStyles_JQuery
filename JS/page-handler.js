@@ -6,6 +6,7 @@ $(document).ready(function(){
     
     $("#home-btn").click(function(){
         
+        hideAll();
         resetTitles();
         
         $("#home-page").show();
@@ -23,7 +24,7 @@ $(document).ready(function(){
     
     $("#skills-btn").click(function(){
         
-        //resetTitles();
+        hideAll();
         
         $("#home-page").hide();
         $("#skills-page").show();
@@ -41,7 +42,7 @@ $(document).ready(function(){
     
     $("#continueBTN").click(function(){
         
-        //resetTitles();
+        hideAll();
         
         $("#about-page").show();
         $("#skills-page").hide();
@@ -57,7 +58,7 @@ $(document).ready(function(){
     
     $("#about-btn").click(function(){
         
-        //resetTitles();
+        hideAll();
         
         $("#about-page").show();
         $("#skills-page").hide();
@@ -73,6 +74,8 @@ $(document).ready(function(){
     
     $("#projects-btn").click(function(){
         
+        hideAll();
+        
         $("#projects-page").show();
         $("#skills-page").hide();
         $("#home-page").hide();
@@ -87,7 +90,7 @@ $(document).ready(function(){
     
     $("#contact-btn").click(function(){
         
-        //resetTitles();
+        hideAll();
         
         $("#contact-page").show();
         $("#skills-page").hide();
@@ -123,6 +126,87 @@ $(document).ready(function(){
         
         $("#project-text-1").addClass("unselected");
         $("#project-text-2").addClass("selected");
+    })
+    
+    //Click events for project buttons
+    $("#IM-Client").click(function(){
+        
+        $("#projects-page").hide();
+        $("#IM-Client-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
+    //Click events for project buttons
+    $("#IM-Server").click(function(){
+        
+        $("#projects-page").hide();
+        $("#IM-Server-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
+    //Click events for project buttons
+    $("#IG-Scraper").click(function(){
+        
+        $("#projects-page").hide();
+        $("#IG-Scraper-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
+    $("#DroneZone").click(function(){
+        
+        $("#projects-page").hide();
+        $("#DroneZone-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
+    $("#Jaguar").click(function(){
+        
+        $("#projects-page").hide();
+        $("#Jaguar-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
+    $("#Tetris-Mobile").click(function(){
+        
+        $("#projects-page").hide();
+        $("#Tetris-Mobile-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
+    $("#AA").click(function(){
+        
+        $("#projects-page").hide();
+        $("#AA-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
+    $("#RT-Site").click(function(){
+        
+        $("#projects-page").hide();
+        $("#RT-Site-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
+    $(".navigation").click(function(){
+        
+        hideAll();
+        $("#projects-page").show();
     })
     
     function resetAllText(){
@@ -179,5 +263,23 @@ $(document).ready(function(){
         $("#title-1").css( "opacity", 0 );
         $("#title-2").css( "opacity", 0 );
         $("#title-3").css( "opacity", 0 );
+    }
+    
+    function hideAll(){
+        
+        $("#projects-page").hide();
+        $("#skills-page").hide();
+        $("#home-page").hide();
+        $("#about-page").hide();
+        $("#contact-page").hide();
+        $("#IM-Server-Page").hide();
+        $("#IM-Client-Page").hide();
+        $("#IG-Scraper-Page").hide();
+        $("#DroneZone-Page").hide();
+        $("#Jaguar-Page").hide();
+        $("#Tetris-Mobile-Page").hide();
+        $("#AA-Page").hide();
+        $("#Checkers-Online-Page").hide();
+        $("#RT-Site-Page").hide();
     }
 });
