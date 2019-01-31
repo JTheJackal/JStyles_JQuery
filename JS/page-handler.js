@@ -194,6 +194,15 @@ $(document).ready(function(){
         resetAllButtons();
     })
     
+    $("#Checkers-Online").click(function(){
+        
+        $("#projects-page").hide();
+        $("#Checkers-Online-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
     $("#RT-Site").click(function(){
         
         $("#projects-page").hide();
