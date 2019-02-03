@@ -259,9 +259,15 @@ p {
     
     position: relative;
     width: 50%;
-    height: 50%;
+    height: 256px;
     float: left;
     padding: 0 1% 0 1%;
+}
+
+.carousel-inner {
+    
+    height: 512px;
+    object-fit: cover;
 }
 
 .link-box {

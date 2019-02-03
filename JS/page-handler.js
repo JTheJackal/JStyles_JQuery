@@ -212,6 +212,15 @@ $(document).ready(function(){
         resetAllButtons();
     })
     
+    $("#Astromasters-Site").click(function(){
+        
+        $("#projects-page").hide();
+        $("#Astromasters-Site-Page").show();
+        
+        resetAllText();
+        resetAllButtons();
+    })
+    
     $(".navigation").click(function(){
         
         hideAll();
@@ -290,5 +299,6 @@ $(document).ready(function(){
         $("#AA-Page").hide();
         $("#Checkers-Online-Page").hide();
         $("#RT-Site-Page").hide();
+        $("#Astromasters-Site-Page").hide();
     }
 });
