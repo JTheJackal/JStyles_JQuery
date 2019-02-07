@@ -170,6 +170,7 @@ p {
     float: left;
     display: inline-block;
     vertical-align: middle;
+    overflow-y: scroll;
 }
 
 .info-panel {
@@ -466,7 +467,7 @@ p {
 
 .summary {
     
-    width: 50%;
+    width: 100%;
     height: 100%;
     float: right;
     margin-left: 10%;
@@ -526,6 +527,12 @@ p {
 .unselected {
     
     color: white;
+}
+
+    
+.no-scroll {
+
+    overflow: hidden;
 }
 
 #home-page {
@@ -783,6 +790,7 @@ p {
         height: 100%;
         margin: 0;
         padding: 0;
+        overflow-y: scroll;
     }
     
     .info {
@@ -790,6 +798,7 @@ p {
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-bottom: 20%;
     }
     
     .scrollable {
@@ -802,8 +811,7 @@ p {
         display: block;
         color: orange;
         text-align: center;
-    }
-    
+    }    
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
