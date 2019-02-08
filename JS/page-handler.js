@@ -22,7 +22,43 @@ $(document).ready(function(){
         fadeInTitles();
     })
     
+    $("#mobile-home-btn").click(function(){
+        
+        hideAll();
+        resetTitles();
+        
+        $("#home-page").show();
+        $("#skills-page").hide();
+        $("#about-page").hide();
+        $("#projects-page").hide();
+        $("#contact-page").hide();
+        
+        resetAllText();
+        resetAllButtons();
+        addBTNSelected($("#home-btn"));
+        addTextSelected($("#home-text"));
+        fadeInTitles();
+    })
+    
     $("#skills-btn").click(function(){
+        
+        hideAll();
+        
+        $("#home-page").hide();
+        $("#skills-page").show();
+        $("#about-page").hide();
+        $("#projects-page").hide();
+        $("#contact-page").hide();
+        
+        resetAllText();
+        resetAllButtons();
+        addBTNSelected($("#skills-btn"));
+        addTextSelected($("#skills-text"));
+        //resetTitles();
+        //fadeInTitles();
+    })
+    
+    $("#mobile-skills-btn").click(function(){
         
         hideAll();
         
@@ -72,6 +108,22 @@ $(document).ready(function(){
         addTextSelected($("#about-text"));
     })
     
+    $("#mobile-about-btn").click(function(){
+        
+        hideAll();
+        
+        $("#about-page").show();
+        $("#skills-page").hide();
+        $("#home-page").hide();
+        $("#projects-page").hide();
+        $("#contact-page").hide();
+        
+        resetAllText();
+        resetAllButtons();
+        addBTNSelected($("#about-btn"));
+        addTextSelected($("#about-text"));
+    })
+    
     $("#projects-btn").click(function(){
         
         hideAll();
@@ -88,7 +140,39 @@ $(document).ready(function(){
         addTextSelected($("#projects-text"));
     })
     
+    $("#mobile-projects-btn").click(function(){
+        
+        hideAll();
+        
+        $("#projects-page").show();
+        $("#skills-page").hide();
+        $("#home-page").hide();
+        $("#about-page").hide();
+        $("#contact-page").hide();
+        
+        resetAllText();
+        resetAllButtons();
+        addBTNSelected($("#projects-btn"));
+        addTextSelected($("#projects-text"));
+    })
+    
     $("#contact-btn").click(function(){
+        
+        hideAll();
+        
+        $("#contact-page").show();
+        $("#skills-page").hide();
+        $("#home-page").hide();
+        $("#about-page").hide();
+        $("#projects-page").hide();
+        
+        resetAllText();
+        resetAllButtons();
+        addBTNSelected($("#contact-btn"));
+        addTextSelected($("#contact-text"));
+    })
+    
+    $("#mobile-contact-btn").click(function(){
         
         hideAll();
         
